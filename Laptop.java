@@ -1,23 +1,17 @@
 class Laptop {
-    private Integer serialNumber;
     private String color;
     private String model;
-    private String hardDiscVolume;
+    private String hardDiskVolume;
     private String OS;
     private Integer RAMsizeGB;
 
 
-    public Laptop (String model, Integer serialNumber, String color, String OS, String hardDiscVolume, Integer RAMsizeGB){
+    public Laptop (String model, String color, String OS, String hardDiskVolume, Integer RAMsizeGB){
         this.model = model;
-        this.serialNumber = serialNumber;
         this.OS = OS;
-        this.hardDiscVolume = hardDiscVolume;
+        this.hardDiskVolume = hardDiskVolume;
         this.color = color;
         this.RAMsizeGB = RAMsizeGB;
-    }
-
-    public Integer getSerialNumber() {
-        return serialNumber;
     }
 
     public String getColor() {
@@ -28,8 +22,8 @@ class Laptop {
         return model;
     }
 
-    public String getHardDiscVolume() {
-        return hardDiscVolume;
+    public String getHardDiskVolume() {
+        return hardDiskVolume;
     }
 
     public String getOS() {
@@ -41,7 +35,7 @@ class Laptop {
     }
 
     public int getHardDiskVolumeGB() {
-        String volumeStr = hardDiscVolume.toLowerCase();
+        String volumeStr = hardDiskVolume.toLowerCase();
         if (volumeStr.contains("tb")) {
             return Integer.parseInt(volumeStr.replace(" tb", "")) * 1024;
         } else if (volumeStr.contains("gb")) {
@@ -54,8 +48,7 @@ class Laptop {
         String result = "Laptop model: " + model + System.lineSeparator()
         + "Color: " + color + System.lineSeparator() 
         + "Operating system: " + OS + System.lineSeparator()
-        + "Hard disk volume: " + hardDiscVolume + System.lineSeparator() 
-        + "Serial Number: " + serialNumber +System.lineSeparator()
+        + "Hard disk volume: " + hardDiskVolume + System.lineSeparator() 
         + "RAM volume: " + RAMsizeGB + " GB";
 
         return result;
