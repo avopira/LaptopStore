@@ -7,16 +7,16 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        Laptop laptop1 = new Laptop("Lenovo T14", 12345678, "black", "Windows 10", "2 TB", 64);
-        Laptop laptop2 = new Laptop("Lenovo T490", 87654321, "black", "Windows 11", "1 TB", 32);
-        Laptop laptop3 = new Laptop("MacBook Air", 12348765, "navy", "iOS 17.0", "2 TB", 64);
-        Laptop laptop4 = new Laptop("ASOS", 87651234, "gray", "Windows 10", "1 TB", 32);
-        Laptop laptop5 = new Laptop("HP", 21436587, "gray", "Windows XP", "256 GB", 16);
-        Laptop laptop6 = new Laptop("Lenovo T14", 23415678, "black", "Windows 11", "512 GB", 32);
-        Laptop laptop7 = new Laptop("Acer", 84653321, "gray", "Windows XP", "256 GB", 16);
-        Laptop laptop8 = new Laptop("MacBook Air", 48765231, "white", "iOS 17.0", "1 TB", 32);
-        Laptop laptop9 = new Laptop("HP", 87651231, "white", "Windows 10", "256 GB", 32);
-        Laptop laptop10 = new Laptop("HP", 21436588, "gray", "Windows 11", "512 GB", 32);
+        Laptop laptop1 = new Laptop("Lenovo T14","black", "Windows 10", "2 TB", 64);
+        Laptop laptop2 = new Laptop("Lenovo T490", "black", "Windows 11", "512 GB", 32);
+        Laptop laptop3 = new Laptop("MacBook Air", "navy", "iOS 17.0", "1 TB", 64);
+        Laptop laptop4 = new Laptop("ASOS", "gray", "Windows 10", "1 TB", 32);
+        Laptop laptop5 = new Laptop("HP", "gray", "Windows XP", "256 GB", 16);
+        Laptop laptop6 = new Laptop("Lenovo T14", "black", "Windows 11", "512 GB", 32);
+        Laptop laptop7 = new Laptop("Acer", "gray", "Windows XP", "256 GB", 16);
+        Laptop laptop8 = new Laptop("MacBook Air", "white", "iOS 17.0", "256 TB", 32);
+        Laptop laptop9 = new Laptop("HP", "white", "Windows 10", "256 GB", 32);
+        Laptop laptop10 = new Laptop("HP", "gray", "Windows 11", "512 GB", 32);
 
         Set<Laptop> laptops = new HashSet<>(Arrays.asList(laptop1, laptop2, laptop3, laptop4, laptop5, laptop6, laptop7,
                 laptop8, laptop9, laptop10));
